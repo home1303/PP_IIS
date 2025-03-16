@@ -22,8 +22,8 @@ def load_imdb_scaler():
     return joblib.load("model/imdb_scaler.pkl")
 
 def load_football_position_model():
-    vectorizer_path = "model/vectorizer.pkl"
-    label_encoder_path = "model/label_encoder.pkl"
+    vectorizer = "model/vectorizer.pkl"
+    label_encoder = "model/label_encoder.pkl"
     
 
     
@@ -34,7 +34,7 @@ baked_food_model = load_baked_food_model()
 titanic_model = load_titanic_model()
 imdb_model = load_imdb_model()
 imdb_scaler = load_imdb_scaler()
-football_position_model, vectorizer, label_encoder = load_football_position_model()
+vectorizer, label_encoder = load_football_position_model()
 
 # Streamlit UI
 st.set_page_config(page_title="ML & NN Web App", page_icon="🎬", layout="wide")
