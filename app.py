@@ -48,6 +48,7 @@ if choice == "🏠 Home":
     st.write("This app showcases multiple Machine Learning models:")
     st.markdown("- **🎥 (NN)IMDb Movie Rating Predictor**: Predict IMDb ratings based on movie details.")
     st.markdown("- **🦋 (ML)Thyroid Disease Prediction**: Predict thyroid disease based on medical attributes.")
+    st.markdown("- **🚢 (ML)Titanic Survival Prediction**: Predict Titanic Survival.")
 
 elif choice == "🎥 (NN)IMDb Movie Rating Predictor":
     st.header("IMDb Movie Rating Predictor")
